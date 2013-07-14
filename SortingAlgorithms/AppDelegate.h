@@ -10,6 +10,12 @@
 
 @interface AppDelegate : NSObject <NSApplicationDelegate>
 
-@property (assign) IBOutlet NSWindow *window;
+@property (weak) IBOutlet NSWindow *window;
+@property (weak) IBOutlet NSTextField *textField;
+
+- (IBAction)bubbleSort:(id)sender;
+- (IBAction)selectionSort:(id)sender;
+- (IBAction)insertionSort:(id)sender;
+- (IBAction)shellSort:(id)sender;
 
 @end
